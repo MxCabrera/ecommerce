@@ -13,5 +13,60 @@
    &:focus {
       left: 0;
    }
+}
 
+// nav bar
+.navBar {
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+   .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+   }
+}
+
+.searchCart {
+   display: flex;
+   justify-content: space-between;
+   gap: 15px;
+}
+
+.counter {
+   p {
+      color: $solidWhite;
+      background-color: $primary;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      border-radius: 50%;
+   }
+}
+
+
+// slide out nav
+
+.slideOutNav {
+   // display: none;
+   height: 100vh;
+   z-index: 20;
+   background-color: $primary;
+   color: $solidWhite;
+   width: 100%;
+   max-width: 500px;
+   position: fixed;
+   top: 0;
+   padding: 35px 50px;
+   // left: -500px;
+   .buttonContainer {
+      display: flex;
+      justify-content: flex-end;
+      button {
+         padding: 10px 0 10px 20px;
+      }
+   }
 }
