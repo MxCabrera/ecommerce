@@ -743,4 +743,7 @@ header .headerContent .contentContainer {
             align-items: center;
     text-align: center;
   }
+  footer .footerNav ul {
+    margin-bottom: 24px;
+  }
 }
